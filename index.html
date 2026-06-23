@@ -1,0 +1,168 @@
+ 
+
+
+
+
+
+
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NexisAI - Smart Management Solutions</title>
+        <!-- استدعاء Tailwind CSS للتنسيق السريع والمحترف -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            brandBlue: '#2563eb',
+                            brandTeal: '#0d9488',
+                        }
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-teal-500 selection:text-white">
+    
+        <!-- 1. Navigation Bar -->
+        <nav class="fixed top-0 w-full z-50 backdrop-blur-md bg-slate-950/70 border-b border-slate-800 px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2 font-black text-xl tracking-wider bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent">
+                ⚡ NEXIS.AI
+            </div>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#features" class="hover:text-teal-400 transition-colors">Features</a>
+                <a href="#stats" class="hover:text-teal-400 transition-colors">Analytics</a>
+                <a href="#contact" class="hover:text-teal-400 transition-colors">Get Started</a>
+            </div>
+            <a href="#contact" class="px-5 py-2 bg-gradient-to-r from-blue-600 to-teal-600 hover:from-blue-500 hover:to-teal-500 text-white text-sm font-semibold rounded-lg transition-all shadow-md shadow-blue-600/20">
+                Request Demo
+            </a>
+        </nav>
+    
+        <!-- 2. Hero Section -->
+        <header class="relative min-h-screen flex items-center justify-center pt-24 overflow-hidden">
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-blue-900/20 via-transparent to-transparent pointer-events-none"></div>
+            <div class="max-w-4xl mx-auto px-6 text-center z-10">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20 mb-6">
+                    Next-Gen MIS & AI Integration
+                </span>
+                <h1 class="text-4xl sm:text-6xl font-black tracking-tight mb-6 leading-tight">
+                    Automate Your Operations With <span class="bg-gradient-to-r from-blue-400 via-teal-400 to-indigo-400 bg-clip-text text-transparent">Intelligent Systems</span>
+                </h1>
+                <p class="text-base sm:text-xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+                    Empower your business with data-driven workflows, smart resource planning, and predictive analytics built for modern management infrastructure.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="#contact" class="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl transition-all shadow-lg shadow-blue-600/30 transform hover:-translate-y-0.5">
+                        Explore Solutions
+                    </a>
+                    <a href="#features" class="px-8 py-4 border border-slate-700 hover:bg-slate-800 text-slate-300 font-semibold rounded-xl transition-all">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </header>
+    
+        <!-- 3. Features Section -->
+        <section id="features" class="py-24 bg-slate-950/50 border-y border-slate-800">
+            <div class="max-w-5xl mx-auto px-6">
+                <div class="text-center max-w-xl mx-auto mb-16">
+                    <h2 class="text-3xl font-bold mb-4">Engineered for Efficiency</h2>
+                    <p class="text-slate-400 text-sm">Discover how our system transforms complex system structures into agile enterprise outcomes.</p>
+                </div>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8" id="features-container">
+                    <!-- سيتم حقن كروت الميزات ديناميكياً هنا عبر جافا سكريبت -->
+                </div>
+            </div>
+        </section>
+    
+        <!-- 4. Stats Section -->
+        <section id="stats" class="py-20 max-w-5xl mx-auto px-6">
+            <div class="p-8 md:p-12 rounded-3xl bg-gradient-to-br from-slate-900 to-slate-950 border border-slate-800 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-3xl md:text-4xl font-extrabold text-blue-400 mb-1">99.9%</div>
+                    <div class="text-xs text-slate-500 uppercase tracking-wider">System Uptime</div>
+                </div>
+                <div>
+                    <div class="text-3xl md:text-4xl font-extrabold text-teal-400 mb-1">45%</div>
+                    <div class="text-xs text-slate-500 uppercase tracking-wider">Cost Reduction</div>
+                </div>
+                <div>
+                    <div class="text-3xl md:text-4xl font-extrabold text-indigo-400 mb-1">12M+</div>
+                    <div class="text-xs text-slate-500 uppercase tracking-wider">Data Row/Min</div>
+                </div>
+                <div>
+                    <div class="text-3xl md:text-4xl font-extrabold text-purple-400 mb-1">24/7</div>
+                    <div class="text-xs text-slate-500 uppercase tracking-wider">Automated Support</div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- 5. Contact Form Section -->
+        <section id="contact" class="py-24 max-w-xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-4">Ready to Optimize Your Workflow?</h2>
+            <p class="text-slate-400 text-sm mb-10">Drop your info below and our operations specialist will reach out within 24 hours.</p>
+            
+            <form id="landingForm" class="space-y-4 text-start bg-slate-950 p-8 rounded-2xl border border-slate-800">
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Company Email</label>
+                    <input type="email" required id="formEmail" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-blue-500 text-slate-200 transition-colors" placeholder="name@company.com">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Interested Service</label>
+                    <select id="formService" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-blue-500 text-slate-400 transition-colors">
+                        <option>Predictive Analytics Dashboard</option>
+                        <option>MIS Resource Optimization</option>
+                        <option>Automated Agile Workflows</option>
+                    </select>
+                </div>
+                <button type="submit" class="w-full py-4 bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold rounded-xl transition-all shadow-md shadow-blue-600/20">
+                    Submit Request
+                </button>
+            </form>
+            <!-- مكان رسالة التأكيد التفاعلية -->
+            <div id="successMessage" class="hidden mt-6 p-4 bg-teal-500/10 border border-teal-500/30 text-teal-400 rounded-xl text-sm font-medium"></div>
+        </section>
+    
+        <!-- 6. Footer -->
+        <footer class="border-t border-slate-800 py-8 text-center text-xs text-slate-600">
+            <p>&copy; 2026 NexisAI. Formulated & Coded by Habiba Farhan.</p>
+        </footer>
+    
+        <!-- استدعاء ملف الجافا سكريبت التفاعلي -->
+        <script src="index.js"></script>
+    </body>
+    </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
